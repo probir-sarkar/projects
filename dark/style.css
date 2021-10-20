@@ -1,5 +1,6 @@
+
 body{
-  background-color: black;
+  background-color: #003545;
 }
 .stack-top {
   width: 306px;
@@ -28,5 +29,6 @@ body{
   justify-content: space-evenly;
 }
 td{
-  border: 3px solid white;
+  border: 3px solid wheat;
+  font-family: cursive;
 }
