@@ -4,7 +4,7 @@ let playerTwoCount = JSON.parse(sessionStorage.getItem("playerTwoCount"));
 let drawCount = JSON.parse(sessionStorage.getItem("drawCount"));
 /*End of Session Storage*/
 
-/*Audio file*/
+/*Audio file
 let human = new Audio("human.wav");
 let robot = new Audio("robot.wav");
 robot.load();
@@ -99,7 +99,7 @@ const overlay = (result) => {
 const btnClicked = (btn) => {
   count--;
   document.getElementById("result").innerHTML = "Playing....";
-  human.play();
+  //human.play();
   btn.disabled = true;
   let position = idArrayInnerHtml.indexOf(btn.innerHTML);
   idArrayInnerHtml.splice(position, 1, player);
