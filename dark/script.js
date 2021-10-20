@@ -17,16 +17,16 @@ human.load();
 let clicked = false;
 function typeX() {
   if (clicked == false) {
-    player = "x";
+    player = "X";
   }
 }
 function typeO() {
   if (clicked == false) {
-    player = "o";
+    player = "O";
   }
 }
 //Onload Default player Determinitation
-let player = "x";
+let player = "X";
 
 /* End of Player Determination */
 
@@ -45,28 +45,28 @@ const checkResult = () => {
     ck[8],
   ];
   if (
-    (a == "x" && b == "x" && c == "x") ||
-    (d == "x" && e == "x" && f == "x") ||
-    (g == "x" && h == "x" && i == "x") ||
-    (a == "x" && d == "x" && g == "x") ||
-    (b == "x" && e == "x" && h == "x") ||
-    (c == "x" && f == "x" && i == "x") ||
-    (a == "x" && e == "x" && i == "x") ||
-    (c == "x" && e == "x" && g == "x")
+    (a == "X" && b == "X" && c == "X") ||
+    (d == "X" && e == "X" && f == "X") ||
+    (g == "X" && h == "X" && i == "X") ||
+    (a == "X" && d == "X" && g == "X") ||
+    (b == "X" && e == "X" && h == "X") ||
+    (c == "X" && f == "X" && i == "X") ||
+    (a == "X" && e == "X" && i == "X") ||
+    (c == "X" && e == "X" && g == "X")
   ) {
     overlay("Player 1 Win");
     playerOneCount = playerOneCount + 1;
     sessionStorage.setItem("playerOneCount", JSON.stringify(playerOneCount));
     return true;
   } else if (
-    (a == "o" && b == "o" && c == "o") ||
-    (d == "o" && e == "o" && f == "o") ||
-    (g == "o" && h == "o" && i == "o") ||
-    (a == "o" && d == "o" && g == "o") ||
-    (b == "o" && e == "o" && h == "o") ||
-    (c == "o" && f == "o" && i == "o") ||
-    (a == "o" && e == "o" && i == "o") ||
-    (c == "o" && e == "o" && g == "o")
+    (a == "O" && b == "O" && c == "O") ||
+    (d == "O" && e == "O" && f == "O") ||
+    (g == "O" && h == "O" && i == "O") ||
+    (a == "O" && d == "O" && g == "O") ||
+    (b == "O" && e == "O" && h == "O") ||
+    (c == "O" && f == "O" && i == "O") ||
+    (a == "O" && e == "O" && i == "O") ||
+    (c == "O" && e == "O" && g == "O")
   ) {
     setTimeout(function () {
       overlay("Player 2 Win");
@@ -109,14 +109,14 @@ const btnClicked = (btn) => {
   clicked = true;
 };
 const xy = () => {
-  if (player == "x") {
+  if (player == "X") {
     document.getElementById("player1").disabled = true;
     document.getElementById("player2").disabled = false;
-    player = "o";
-  } else if (player == "o") {
+    player = "O";
+  } else if (player == "O") {
     document.getElementById("player1").disabled = false;
     document.getElementById("player2").disabled = true;
-    player = "x";
+    player = "X";
   }
 };
 
