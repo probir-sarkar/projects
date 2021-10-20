@@ -74,42 +74,73 @@
           <!-- End of Overlay Div-->
         </div>
         <!--Instruction-->
-        <div class="accordion mb-4">
+        <div class="accordion mb-4" id="accordionExample">
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseInstruction">
-                Instructions -
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
               </button>
             </h2>
-            <div id="collapseInstruction" class="accordion-collapse collapse">
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <ol>
-                  <li>You play on a three by three game board</li>
-                  <li>The first player is known as X and the second is O. But players can alternate their position by clicking (Player
-                  One/Player Two) buttons on the top of game.</li>
-                  <li>Once the game started players cant alternate until finished.</li>
-                  <li>The active button shows which player has the next turn. For example, if the Player One button is active means the player
-                  has to play his turn.</li>
-                </ol>
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin
+                adds
+                the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as
+                well
+                as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                overriding our
+                default variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseRules">
-                RULES FOR TIC-TAC-TOE
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
               </button>
             </h2>
-            <div id="collapseRules" class="accordion-collapse collapse">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <ol>
-                  <li>The game is played on a grid that's 3 squares by 3 squares</li>
-                  <li>You are X, your friend is O. Players take turns putting their marks in empty squares.</li>
-                  <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li>
-                  <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie. </li>
-                </ol>
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                collapse plugin
+                adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance,
+                as
+                well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                overriding
+                our
+                default variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                collapse plugin
+                adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance,
+                as
+                well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                overriding
+                our
+                default variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
