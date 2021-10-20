@@ -52,7 +52,6 @@ td {
 }
 .accordion-item {
     background-color: #fff;
-     border: none; 
 }
 .font-1{
   font-family: 'Permanent Marker', cursive;
@@ -65,4 +64,7 @@ h3#result {
 
 .accordion-button::after {
     background-image: url(https://projects.probirsarkar.in/dark/svg.svg);
+}
+.accordion-button:not(.collapsed)::after {
+background-image: url(https://projects.probirsarkar.in/dark/svg.svg);
 }
