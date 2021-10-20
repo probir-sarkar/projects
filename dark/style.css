@@ -10,9 +10,10 @@ body {
 }
 .playBtn {
   width: 100px;
-  font-size: 3em !important;
+  font-size: 4em !important;
   font-weight: 400 !important;
   color: wheat;
+  padding: 0px;
 }
 .playBtn:disabled {
   opacity: 1;
