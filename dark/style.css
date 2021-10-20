@@ -1,0 +1,33 @@
+body{
+  background-color: black;
+}
+.stack-top {
+  width: 306px;
+  background-color: rgba(255, 255, 255, 0.205);
+  backdrop-filter: blur(0.5px);
+  height: 306px;
+}
+.playBtn {
+  height: 150px;
+  width: 150px;
+  font-size: 5em !important;
+  font-weight: 300 !important;
+  color: white;
+}
+.playBtn:disabled {
+  opacity: 1;
+  color: white;
+}
+.rst {
+  width: 125px;
+  font-weight: 500;
+}
+.rowoverlay {
+  position: absolute;
+}
+.parent {
+  justify-content: space-evenly;
+}
+td{
+  border: 1px solid white;
+}
