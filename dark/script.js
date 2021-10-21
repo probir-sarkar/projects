@@ -1,11 +1,11 @@
+/* Table backup*/
 let gameTable = document.querySelector("#gameTable").innerHTML;
 console.log(gameTable);
-
-
+/*End of Table Backup*/
 /*Session Storage*/
-let playerOneCount = JSON.parse(sessionStorage.getItem("playerOneCount"));
-let playerTwoCount = JSON.parse(sessionStorage.getItem("playerTwoCount"));
-let drawCount = JSON.parse(sessionStorage.getItem("drawCount"));
+let playerOneCount = 0
+let playerTwoCount = 0
+let drawCount = 0
 /*End of Session Storage*/
 
 /*Audio file
@@ -60,7 +60,6 @@ const checkResult = () => {
   ) {
     overlay("Player 1 Win");
     playerOneCount = playerOneCount + 1;
-    sessionStorage.setItem("playerOneCount", JSON.stringify(playerOneCount));
   } else if (
     (a == "O" && b == "O" && c == "O") ||
     (d == "O" && e == "O" && f == "O") ||
@@ -73,12 +72,10 @@ const checkResult = () => {
   ) {
     overlay("Player 2 Win");
     playerTwoCount = playerTwoCount + 1;
-    sessionStorage.setItem("playerTwoCount", JSON.stringify(playerTwoCount));
   } else {
     if (count == 0) {
       overlay("draw");
       drawCount = drawCount + 1;
-      sessionStorage.setItem("drawCount", JSON.stringify(drawCount));
     }
   }
 };
@@ -114,17 +111,6 @@ const xy = () => {
 
 let count = 9;
 
-if (playerOneCount == null) {
-  document.getElementById("playerOne").innerHTML = "0";
-} else {
-  document.getElementById("playerOne").innerHTML = playerOneCount;
-}
-if (playerTwoCount == null) {
-  document.getElementById("playerTwo").innerHTML = "0";
-} else {
-  document.getElementById("playerTwo").innerHTML = playerTwoCount;
-}
-
 /*Refresh And Reset */
 let refresh = document.querySelector("#refresh");
 
@@ -143,6 +129,8 @@ reset.onclick = () => {
 /* Fetch Game Data*/
 let idArrayInnerHtml = [];
 function reloadPage() {
+  document.getElementById("playerOne").innerHTML = playerOneCount;
+  document.getElementById("playerTwo").innerHTML = playerTwoCount;
   for (i = 1; i <= 9; i++) {
     eval("let btn" + i + "= document.querySelector(`#btn${i}`)");
     eval("idArrayInnerHtml.push(`btn${i}`)");
@@ -150,42 +138,3 @@ function reloadPage() {
   }
 }
 reloadPage();
-
-/* Backup Code*/
-/*
-let btn1 = document.querySelector("#btn1");
-let btn2 = document.querySelector("#btn2");
-let btn3 = document.querySelector("#btn3");
-let btn4 = document.querySelector("#btn4");
-let btn5 = document.querySelector("#btn5");
-let btn6 = document.querySelector("#btn6");
-let btn7 = document.querySelector("#btn7");
-let btn8 = document.querySelector("#btn8");
-let btn9 = document.querySelector("#btn9");
-*/
-//Save Button Data in array then change is as button clicked, It will help to determine result
-/*
-let idArrayInnerHtml = [
-  btn1.innerHTML,
-  btn2.innerHTML,
-  btn3.innerHTML,
-  btn4.innerHTML,
-  btn5.innerHTML,
-  btn6.innerHTML,
-  btn7.innerHTML,
-  btn8.innerHTML,
-  btn9.innerHTML,
-];*/
-/*End of Fetch Game Data */
-
-/*
-btn1.onclick = () => btnClicked(btn1);
-btn2.onclick = () => btnClicked(btn2);
-btn3.onclick = () => btnClicked(btn3);
-btn4.onclick = () => btnClicked(btn4);
-btn5.onclick = () => btnClicked(btn5);
-btn6.onclick = () => btnClicked(btn6);
-btn7.onclick = () => btnClicked(btn7);
-btn8.onclick = () => btnClicked(btn8);
-btn9.onclick = () => btnClicked(btn9);
-*/
