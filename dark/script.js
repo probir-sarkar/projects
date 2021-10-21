@@ -12,6 +12,8 @@ human.load();
 /*End of audio file*/
 
 /*Player Determination*/
+//Onload Default player Determinitation
+let player = "X";
 
 // Notification Button Clicked
 let clicked = false;
@@ -25,8 +27,6 @@ function typeO() {
     player = "O";
   }
 }
-//Onload Default player Determinitation
-let player = "X";
 
 /* End of Player Determination */
 
@@ -57,7 +57,6 @@ const checkResult = () => {
     overlay("Player 1 Win");
     playerOneCount = playerOneCount + 1;
     sessionStorage.setItem("playerOneCount", JSON.stringify(playerOneCount));
-    return true;
   } else if (
     (a == "O" && b == "O" && c == "O") ||
     (d == "O" && e == "O" && f == "O") ||
@@ -68,9 +67,7 @@ const checkResult = () => {
     (a == "O" && e == "O" && i == "O") ||
     (c == "O" && e == "O" && g == "O")
   ) {
-    setTimeout(function () {
-      overlay("Player 2 Win");
-    }, 100);
+    overlay("Player 2 Win");
     playerTwoCount = playerTwoCount + 1;
     sessionStorage.setItem("playerTwoCount", JSON.stringify(playerTwoCount));
   } else {
@@ -82,18 +79,9 @@ const checkResult = () => {
   }
 };
 /* End Of Passing Condition*/
-
-
-
-const playBtn = document.querySelectorAll("button.playBtn");
-const disableBtn = () => {
-  playBtn.forEach((elem) => (elem.disabled = true));
-};
-
 const overlay = (result) => {
   document.getElementById("result").innerHTML = result;
   document.getElementById("overlay").style.visibility = "visible";
-  disableBtn();
 };
 
 const btnClicked = (btn) => {
@@ -101,7 +89,7 @@ const btnClicked = (btn) => {
   document.getElementById("result").innerHTML = "Playing....";
   //human.play();
   btn.disabled = true;
-  let position = idArrayInnerHtml.indexOf(btn.innerHTML);
+  let position = idArrayInnerHtml.indexOf(btn.id);
   idArrayInnerHtml.splice(position, 1, player);
   btn.innerHTML = player;
   xy();
@@ -122,11 +110,6 @@ const xy = () => {
 
 let count = 9;
 
-
-
-let refresh = document.querySelector("#refresh");
-let reset = document.querySelector("#reset");
-
 if (playerOneCount == null) {
   document.getElementById("playerOne").innerHTML = "0";
 } else {
@@ -137,6 +120,10 @@ if (playerTwoCount == null) {
 } else {
   document.getElementById("playerTwo").innerHTML = playerTwoCount;
 }
+
+/*Refresh And Reset */
+let refresh = document.querySelector("#refresh");
+let reset = document.querySelector("#reset");
 refresh.onclick = () => {
   location.reload(false);
 };
@@ -148,9 +135,10 @@ reset.onclick = () => {
 let idArrayInnerHtml = [];
 for (i = 1; i <= 9; i++) {
   eval("let btn" + i + "= document.querySelector(`#btn${i}`)");
-  eval("idArrayInnerHtml.push(btn" + i + ".innerHTML)");
-  eval("btn"+i+".onclick = () => btnClicked(btn"+i+")");
+  eval("idArrayInnerHtml.push(`btn${i}`)");
+  eval("btn" + i + ".onclick = () => btnClicked(btn" + i + ")");
 }
+
 /* Backup Code*/
 /*
 let btn1 = document.querySelector("#btn1");
