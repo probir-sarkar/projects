@@ -1,3 +1,7 @@
+let gameTable = document.querySelector("#gameTable").innerHTML;
+console.log(gameTable);
+
+
 /*Session Storage*/
 let playerOneCount = JSON.parse(sessionStorage.getItem("playerOneCount"));
 let playerTwoCount = JSON.parse(sessionStorage.getItem("playerTwoCount"));
@@ -123,9 +127,14 @@ if (playerTwoCount == null) {
 
 /*Refresh And Reset */
 let refresh = document.querySelector("#refresh");
+
 let reset = document.querySelector("#reset");
 refresh.onclick = () => {
-  location.reload(false);
+  idArrayInnerHtml = [];
+  count = 9;
+  document.getElementById("overlay").style.visibility = "hidden";
+  document.querySelector("#gameTable").innerHTML = gameTable;
+  reloadPage();
 };
 reset.onclick = () => {
   sessionStorage.clear();
@@ -133,11 +142,14 @@ reset.onclick = () => {
 };
 /* Fetch Game Data*/
 let idArrayInnerHtml = [];
-for (i = 1; i <= 9; i++) {
-  eval("let btn" + i + "= document.querySelector(`#btn${i}`)");
-  eval("idArrayInnerHtml.push(`btn${i}`)");
-  eval("btn" + i + ".onclick = () => btnClicked(btn" + i + ")");
+function reloadPage() {
+  for (i = 1; i <= 9; i++) {
+    eval("let btn" + i + "= document.querySelector(`#btn${i}`)");
+    eval("idArrayInnerHtml.push(`btn${i}`)");
+    eval("btn" + i + ".onclick = () => btnClicked(btn" + i + ")");
+  }
 }
+reloadPage();
 
 /* Backup Code*/
 /*
