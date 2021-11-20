@@ -1,0 +1,48 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <title>Call-Break</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <table style="width: 100%" id="myTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <th contenteditable="true" class="tHead" onblur="setName()">First</th>
+          <th contenteditable="true" class="tHead" onblur="setName()">Second</th>
+          <th contenteditable="true" class="tHead" onblur="setName()">Third</th>
+          <th contenteditable="true" class="tHead" onblur="setName()">Fourth</th>
+        </tr>
+        
+        <tr id="result">
+          <td>
+            Total = <span class="find"></span><br /><span
+              class="resultOut"
+            ></span>
+          </td>
+          <td>
+            Total = <span class="find"></span><br /><span
+              class="resultOut"
+            ></span>
+          </td>
+          <td>
+            Total = <span class="find"></span><br /><span
+              class="resultOut"
+            ></span>
+          </td>
+          <td>
+            Total = <span class="find"></span><br /><span
+              class="resultOut"
+            ></span>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div id="container">
+      <button type="button" onclick="myFunction()" class="button" id="btn1">
+        Add Row
+      </button>
+    </div>
+  </body>
+  <script src="myscript.js"></script>
+</html>
