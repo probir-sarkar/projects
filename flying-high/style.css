@@ -1,6 +1,43 @@
-body{
+
+.btn-full-width {
+    width: 100%;
+}
+
+.bg-orange {
+    background-color: hsl(14.100000000000023, 88.2%, 39.8%);
+}
+
+.parallax-one {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url("https://cdn.convrrt.com/apps/infusionsoft/ewk745/29379d1b-67c2-4b32-afb1-f2b9e221b0ea.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.bg-dark-opacity{
     background-color: hsla(201.39999999999998, 10.6%, 25.9%, 0.9);
 }
-.btn-full-width{
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
+.font-catamaran{
+    font-family: 'Catamaran', sans-serif;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
