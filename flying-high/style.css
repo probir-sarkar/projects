@@ -1,8 +1,7 @@
 body{
     background-color: hsla(201.39999999999998, 10.6%, 25.9%, 0.9);
-    color: white;
 }
-#main-container{
+.main-container{
     margin-top: 50px;
     /* background-color: rgba(0, 0, 0, 0.24);
-} */
+} */}
