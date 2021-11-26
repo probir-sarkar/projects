@@ -1,52 +1,68 @@
-
 @font-face {
-    font-family: myFirstFont;
-    src: url("sd-prostreet.woff");
+  font-family: myFirstFont;
+  src: url("sd-prostreet.woff");
 }
 
 .nav-bg-font {
-    font-family: "myFirstFont";
-    background-color: #121212;
-    min-height: 60px;
-    font-size: 24px;
-    color: white;
-    border-bottom: 1px solid black;
-    box-shadow: 0 .15em .35em 0 rgba(0,0,0,.475);
-    z-index: -2;
+  font-family: "myFirstFont";
+  background-color: #121212;
+  font-size: 24px;
+  color: white;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  line-height: 1;
 }
-.nav-bg-font a{
+.nav-bg-font a {
   color: #b7b7b7;
   text-transform: uppercase;
   opacity: 1;
+  padding-left: 1rem !important;
 }
-.nav-bg-font .row{
-  width: 90%;
+.nav-bg-font a:hover{
+color: #d33;
 }
-.nav-bg-font button{
-  z-index: 999;
+.fixed-div {
+    position: fixed;
+    top: 1em;
+    right: 1em;
 }
-.nav-long-bg{
-  min-height: 70px;
+
+.nav-bg{
   background-color: #121212;
 }
 
-.logo-img{
- width: 550px;
- position: absolute;
- margin-top: -8%;
- z-index: 5;
+.nav-bg-font .row {
+  width: 90%;
 }
-
-.poster{
+.nav-bg-font button {
+  z-index: 999;
+}
+.poster {
   background-image: url("BACKGROUND_GEENERIC_001.jpg");
-  
 }
 .inner {
   position: absolute;
 }
-img{
+img {
   width: 100%;
 }
-.width-90{
+.width-90 {
   max-width: 90%;
+}
+.btn-nav{
+  color: #e1e1e1;
+background-color: #121212;
+box-shadow: inset 0 0 0 rgba(0,0,0,0),0 1px 4px #000;
+}
+.brand-logo-img {position:absolute;
+margin-top: -10%;
+z-index: 5;
+}
+#main-navbar .dropdown:hover>.dropdown-menu {
+  display: block;
+  background-color: #121212;
+}
+body{
+  width: auto;
 }
