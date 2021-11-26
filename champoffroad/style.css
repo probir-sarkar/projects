@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("sd-prostreet.woff");
+}
+
+.nav-bg-font {
+    font-family: "myFirstFont";
+    background-color: #121212;
+    min-height: 60px;
+    font-size: 24px;
+    color: white;
+    border-bottom: 1px solid black;
+    box-shadow: 0 .15em .35em 0 rgba(0,0,0,.475);
+    z-index: -2;
+}
+.nav-bg-font a{
+  color: #b7b7b7;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.nav-bg-font .row{
+  width: 90%;
+}
+.nav-bg-font button{
+  z-index: 999;
+}
+.nav-long-bg{
+  min-height: 70px;
+  background-color: #121212;
+}
+
+.logo-img{
+ width: 550px;
+ position: absolute;
+ margin-top: -8%;
+ z-index: 5;
+}
+
+.poster{
+  background-image: url("BACKGROUND_GEENERIC_001.jpg");
+  
+}
+.inner {
+  position: absolute;
+}
+img{
+  width: 100%;
+}
+.width-90{
+  max-width: 90%;
+}
