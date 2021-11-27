@@ -1,8 +1,21 @@
+/* careful */
 @font-face {
   font-family: myFirstFont;
   src: url("sd-prostreet.woff");
 }
+.myFirstFont{
+  font-family: myFirstFont;
+  color: #b7b7b7;
+}
+.myFirstFont:hover{
+color: #d33;
+}
 
+h2, .h2 {
+    font-size: 285.7%;
+    line-height: 1.2;
+    font-family: myFirstFont;
+}
 .nav-bg-font {
   font-family: "myFirstFont";
   background-color: #121212;
@@ -35,9 +48,7 @@
 .nav-bg-font .row {
   width: 90%;
 }
-.nav-bg-font button {
-  z-index: 999;
-}
+
 .poster {
   background-image: url("BACKGROUND_GEENERIC_001.jpg");
 }
@@ -58,7 +69,6 @@ img {
 .brand-logo-img {
   position: absolute;
   margin-top: -10%;
-  z-index: 5;
   transform: scale(1.2);
 }
 #main-navbar .dropdown:hover > .dropdown-menu {
@@ -120,4 +130,18 @@ transition: box-shadow .3s ease,color .3s ease,background-color .3s ease;
     margin-left: 0%;
     width: 100%;
   }
+}
+
+.dark-body-bg {
+  background-color: #101010;
+  z-index: 1;
+}
+#section-3 .col-md-2 {
+    -ms-flex: 0 0 19%;
+    flex: 0 0 19%;
+    max-width: 19%;
+}
+#section-3 .col-md-2 img:hover{
+  transform: scale(1.2);
+  transition: all 0.5s ease-out !important;
 }
