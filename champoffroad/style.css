@@ -19,16 +19,16 @@
   opacity: 1;
   padding-left: 1rem !important;
 }
-.nav-bg-font a:hover{
-color: #d33;
+.nav-bg-font a:hover {
+  color: #d33;
 }
 .fixed-div {
-    position: fixed;
-    top: 1em;
-    right: 1em;
+  position: fixed;
+  top: 1em;
+  right: 1em;
 }
 
-.nav-bg{
+.nav-bg {
   background-color: #121212;
 }
 
@@ -50,19 +50,37 @@ img {
 .width-90 {
   max-width: 90%;
 }
-.btn-nav{
+.btn-nav {
   color: #e1e1e1;
-background-color: #121212;
-box-shadow: inset 0 0 0 rgba(0,0,0,0),0 1px 4px #000;
+  background-color: #121212;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 1px 4px #000;
 }
-.brand-logo-img {position:absolute;
-margin-top: -10%;
-z-index: 5;
+.brand-logo-img {
+  position: absolute;
+  margin-top: -10%;
+  z-index: 5;
 }
-#main-navbar .dropdown:hover>.dropdown-menu {
+#main-navbar .dropdown:hover > .dropdown-menu {
   display: block;
   background-color: #121212;
 }
-body{
+body {
   width: auto;
 }
+
+@media only screen and (max-device-width: 1100px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+/* .navbar-btn-toggle{
+border: 0;
+padding: .458em .625em;
+text-shadow: 0 1px 1px rgba(0,0,0,.75);
+color: #bbb;
+background-color: #0a0a0a;
+border-radius: 4px;
+box-shadow: inset 0 1px 4px rgba(0,0,0,.95);
+-webkit-transition: box-shadow .3s ease,color .3s ease,background-color .3s ease;
+transition: box-shadow .3s ease,color .3s ease,background-color .3s ease;
+} */
