@@ -83,23 +83,58 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     RACERS
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link " href="http://example.com" id="navbarDropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    FANS
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <!-- Sub Menu -->
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Dropdown item 2 &raquo;
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Submenu item 1</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Submenu item 2</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Submenu item 3
+                                                    &raquo;
+                                                </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Multi level
+                                                            1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Multi level
+                                                            2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Submenu item 4</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Submenu item 5</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- End of Sub Menu -->
+                            </li><a class="dropdown-item" href="#">Another action</a></li>
+                            </li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="http://example.com" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FANS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
                         </ul>
                     </div>
                     <div class="col-lg-4 d-flex"><img class="navbar-brand d-none d-lg-block brand-logo-img"
@@ -399,5 +434,6 @@
         </div>
     </footer>
 </body>
-
+<link rel="stylesheet" href="submenu.css">
+<script src="submenu.js"></script>
 </html>
