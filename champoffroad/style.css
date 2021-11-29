@@ -3,7 +3,7 @@
   font-family: myFirstFont;
   src: url("sd-prostreet.woff");
 }
-.myFirstFont {
+.myFirstFont , .myFirstFont a {
   font-family: myFirstFont;
   color: #b7b7b7;
 }
@@ -15,6 +15,24 @@
 /* Global Css */
 body{
 background-color: #121212;
+}
+.footer-menu li{
+  display: inline;
+}
+.footer-menu li a{
+  color: #e50e07;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+}
+.nav-icon li i{
+font-size: 1.5rem;
+margin-right: 5%;
+}
+.footer-menu li a{
+  text-decoration: none;
+}
+.footer-icon a i{
+  color: #b7b7b7;
 }
 /* End of Global CSS */
 
