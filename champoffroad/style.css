@@ -36,16 +36,20 @@ h2 {
   line-height: 1.2;
   font-family: myFirstFont;
 }
-.width-90 {
-  max-width: 90%;
+.width-95 {
+  max-width: 95%;
 }
 /* End of CSS for Desktop Screen */
 
 /* CSS for Mobile Screen */
-@media (max-width: 1100px) {
-/* #events .col-lg-4{
-  max-width: 33%;
-} */
+@media (max-width: 960px) {
+#section-1{
+  background-image: url("BACKGROUND_GEENERIC_001.jpg");
+  background-position: right;
+}
+.mobile-hide{
+  display: none;
+}
 }
 /* End of CSS for Mobile Screen */
 
