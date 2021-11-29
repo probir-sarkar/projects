@@ -49,13 +49,15 @@ h2 {
 #section-1{
   background-image: url("BACKGROUND_GEENERIC_001.jpg");
   background-position: right;
-  padding: 0%;
 }
 #section-1 .col-lg-2{
   max-width: 50%;
 }
 .mobile-hide{
   display: none;
+}
+.width-95 {
+  max-width: 100%;
 }
 }
 /* End of CSS for Mobile Screen */
