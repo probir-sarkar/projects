@@ -1,21 +1,54 @@
-/* careful */
+/* Font Family */
 @font-face {
   font-family: myFirstFont;
   src: url("sd-prostreet.woff");
 }
-.myFirstFont{
+.myFirstFont {
   font-family: myFirstFont;
   color: #b7b7b7;
 }
-.myFirstFont:hover{
-color: #d33;
+.myFirstFont:hover {
+  color: #d33;
 }
+/* End of Font Family */
 
-h2, .h2 {
-    font-size: 285.7%;
-    line-height: 1.2;
-    font-family: myFirstFont;
+/* Global Css */
+h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-family: myFirstFont;
 }
+body{
+background-color: #121212;
+}
+/* End of Global CSS */
+
+/* CSS for Desktop Screen */
+@media screen and (min-width: 960px) {
+  #section-4 .col-lg-6 {
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-family: myFirstFont;
+}
+.width-90 {
+  max-width: 90%;
+}
+/* End of CSS for Desktop Screen */
+
+/* CSS for Mobile Screen */
+@media (max-width: 1100px) {
+#events .col-lg-4{
+  max-width: 33%;
+}
+}
+/* End of CSS for Mobile Screen */
+
 .nav-bg-font {
   font-family: "myFirstFont";
   background-color: #121212;
@@ -58,9 +91,7 @@ h2, .h2 {
 img {
   width: 100%;
 }
-.width-90 {
-  max-width: 90%;
-}
+
 .btn-nav {
   color: #e1e1e1;
   background-color: #121212;
@@ -79,11 +110,11 @@ body {
   width: auto;
 }
 
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
   .hide-on-mobile {
     display: none;
   }
-}
+} */
 /* .navbar-btn-toggle{
 border: 0;
 padding: .458em .625em;
@@ -137,11 +168,31 @@ transition: box-shadow .3s ease,color .3s ease,background-color .3s ease;
   z-index: 1;
 }
 #section-3 .col-md-2 {
-    -ms-flex: 0 0 19%;
-    flex: 0 0 19%;
-    max-width: 19%;
+  -ms-flex: 0 0 19%;
+  flex: 0 0 19%;
+  max-width: 19%;
 }
-#section-3 .col-md-2 img:hover{
+#section-3 .col-md-2 img:hover {
   transform: scale(1.2);
   transition: all 0.5s ease-out !important;
+}
+#section-4 h5 {
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.div-link:hover {
+  text-decoration: none;
+}
+
+
+.div-link {
+  border: 1px solid #000;
+  padding: 5px 5px 0;
+  background-color: #0c0c0c;
+  border-radius: 3px;
+  box-shadow: inset 0 -0.125em 0.5em 0 rgba(0, 0, 0, 0.85),
+    0 3px 2px -2px rgba(255, 255, 255, 0.075);
+  transform: translate3d(0, 0, 0);
 }
