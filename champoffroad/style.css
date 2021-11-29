@@ -13,11 +13,6 @@
 /* End of Font Family */
 
 /* Global Css */
-h2 {
-  font-size: 2.8rem;
-  line-height: 1.2;
-  font-family: myFirstFont;
-}
 body{
 background-color: #121212;
 }
@@ -46,9 +41,15 @@ h2 {
 
 /* CSS for Mobile Screen */
 @media (max-width: 960px) {
-#section-1{
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-family: myFirstFont;
+}
+  #section-1{
   background-image: url("BACKGROUND_GEENERIC_001.jpg");
   background-position: right;
+  overflow: hidden;
 }
 #section-1 .col-lg-2{
   max-width: 50%;
