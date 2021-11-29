@@ -43,10 +43,10 @@ h2 {
 
 /* CSS for Mobile Screen */
 @media (max-width: 1100px) {
-#events .col-lg-4{
+/* #events .col-lg-4{
   max-width: 33%;
 }
-}
+} */
 /* End of CSS for Mobile Screen */
 
 .nav-bg-font {
