@@ -39,6 +39,9 @@ h2 {
 .width-95 {
   max-width: 95%;
 }
+#event-bar{
+  padding: 0%;
+}
 /* End of CSS for Desktop Screen */
 
 /* CSS for Mobile Screen */
@@ -46,9 +49,10 @@ h2 {
 #section-1{
   background-image: url("BACKGROUND_GEENERIC_001.jpg");
   background-position: right;
+  padding: 0%;
 }
 #section-1 .col-lg-2{
-  max-width: 48%;
+  max-width: 50%;
 }
 .mobile-hide{
   display: none;
