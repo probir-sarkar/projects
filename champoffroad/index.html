@@ -59,57 +59,41 @@
         </nav>
     </div> -->
     <nav class="navbar fixed-top navbar-expand-lg pt-lg-4 nav-bg-font" id="main-navbar">
-
         <!--  Show this only on mobile to medium screens  -->
         <!-- <img class="navbar-brand d-lg-none logo-img" src="SITE_LOGO2.png" height="75px"> -->
-
         <button class="navbar-toggler navbar-dark navbar-btn-toggle" type="button" data-toggle="collapse"
             data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <!--  Use flexbox utility classes to change how the child elements are justified  -->
         <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="container-fluid">
-                <div class="row" style="width: 100%;">
+                <div class="row nav-dropdown-font" style="width: 100%;">
                     <div class="col-lg-4 d-flex">
+                        <!-- Dropdown level-0 -->
                         <ul class="navbar-nav px-3">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">TOUR</a>
                             </li>
+                            <!-- Dropdown level-1 -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link " href="http://example.com" id="navbarDropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     RACERS
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <!-- Sub Menu -->
+                                <ul class="dropdown-menu body-bg " aria-labelledby="navbarDropdownMenuLink">
+                                    <!-- Dropdown level-2 -->
                                     <li>
                                         <a class="dropdown-item" href="#">
                                             Dropdown item 2 &raquo;
                                         </a>
-                                        <ul class="submenu dropdown-menu">
+                                        <ul class="submenu dropdown-menu body-bg">
                                             <li>
                                                 <a class="dropdown-item" href="#">Submenu item 1</a>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item" href="#">Submenu item 2</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Submenu item 3
-                                                    &raquo;
-                                                </a>
-                                                <ul class="submenu dropdown-menu">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#">Multi level
-                                                            1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#">Multi level
-                                                            2</a>
-                                                    </li>
-                                                </ul>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item" href="#">Submenu item 4</a>
@@ -119,23 +103,26 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <!-- End of Sub Menu -->
-                            </li><a class="dropdown-item" href="#">Another action</a></li>
-                            </li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <!-- End of Dropdown level-2 -->
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <!-- End of Dropdown level-1 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="http://example.com" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    FANS
+                                </a>
+                                <div class="dropdown-menu body-bg" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+
                         </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link " href="http://example.com" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                FANS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        </ul>
+                        <!-- End of Dropdown level-0 -->
                     </div>
                     <div class="col-lg-4 d-flex"><img class="navbar-brand d-none d-lg-block brand-logo-img"
                             src="SITE_LOGO2.png">
@@ -150,7 +137,7 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     SPONSORS
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="dropdown-menu body-bg" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <a class="dropdown-item" href="#">Something else here</a>
@@ -161,7 +148,7 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     shop
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="dropdown-menu body-bg" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <a class="dropdown-item" href="#">Something else here</a>
@@ -436,4 +423,5 @@
 </body>
 <link rel="stylesheet" href="submenu.css">
 <script src="submenu.js"></script>
+
 </html>

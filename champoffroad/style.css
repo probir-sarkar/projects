@@ -13,7 +13,7 @@
 /* End of Font Family */
 
 /* Global Css */
-body{
+body,.body-bg{
 background-color: #121212;
 }
 .footer-menu li{
@@ -34,16 +34,22 @@ margin-right: 5%;
 .footer-icon a i{
   color: #b7b7b7;
 }
+.nav-dropdown-font div ul li ul a,.nav-dropdown-font div ul li div a{
+  font-family: "Lato",sans-serif;
+  text-transform: capitalize;
+  font-size: 1rem;
+  background-color: black !important;
+}
 /* End of Global CSS */
 
 /* CSS for Desktop Screen */
-@media screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
   #section-4 .col-lg-6 {
     -ms-flex: 0 0 48%;
     flex: 0 0 48%;
     max-width: 48%;
   }
-}
+
 h2 {
   font-size: 2.8rem;
   line-height: 1.2;
@@ -55,6 +61,15 @@ h2 {
 #event-bar{
   padding: 0%;
 }
+#section-3 .col-lg-2 {
+  -ms-flex: 0 0 19%;
+  flex: 0 0 19%;
+  max-width: 19%;
+}
+#section-3 .col-lg-2 img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-out !important;
+}}
 /* End of CSS for Desktop Screen */
 
 /* CSS for Mobile Screen */
@@ -74,9 +89,6 @@ h2 {
 }
 .mobile-hide{
   display: none;
-}
-.width-95 {
-  max-width: 100%;
 }
 .title-text{
   transform: scale(1.7);
@@ -202,15 +214,7 @@ transition: box-shadow .3s ease,color .3s ease,background-color .3s ease;
   background-color: #101010;
   z-index: 1;
 }
-#section-3 .col-lg-2 {
-  -ms-flex: 0 0 19%;
-  flex: 0 0 19%;
-  max-width: 19%;
-}
-#section-3 .col-lg-2 img:hover {
-  transform: scale(1.2);
-  transition: all 0.5s ease-out !important;
-}
+
 #section-4 h5 {
   text-transform: uppercase;
   white-space: nowrap;
