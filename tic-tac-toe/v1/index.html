@@ -17,17 +17,16 @@
 <body>
   <div class="py-5">
     <div class="container d-flex justify-content-center">
-      <div class="row d-flex col-md-8 col-lg-6 justify-content-center">
-        <h1 id="gameName" class=" custom-font-1">Tic Tac Toe</h1>
+      <div class="row d-flex col-md-8 col-lg-6 justify-content-center rounded-lg shadow-lg">
         <!-- Notifications Button -->
         <div class="d-flex flex-row justify-content-between mt-4">
-          <button type="button" id="player1"  class="btn btn-success position-relative">
+          <button type="button" id="player1" onclick="typeX()" class="btn btn-success position-relative">
             Player One
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               <span id="playerOne"></span>
             </span>
           </button>
-          <button type="button" id="player2" class="btn btn-danger position-relative">
+          <button type="button" id="player2" onclick="typeO()" class="btn btn-danger position-relative">
             Player Two
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               <span id="playerTwo"></span>
@@ -35,34 +34,42 @@
           </button>
         </div>
         <!-- End of Notifications Button -->
-
-        <!--Game Table-->
-        <div class="d-flex justify-content-center px-4 py-5" >
-          <table rules="all" class="table-info" id="gameTable">
+        <div class="d-flex justify-content-center px-4 py-5">
+          <!--Game Table-->
+          <table rules="all" class="table-info">
             <tr>
-              <td><button id="btn1" class="playBtn btn"></button></td>
-              <td><button id="btn2" class="playBtn btn"></button></td>
-              <td><button id="btn3" class="playBtn btn"></button></td>
+              <td><button id="btn1" class="playBtn btn btn-info btn-lg"><span
+                    style="visibility: hidden;">1</span></button></td>
+              <td><button id="btn2" class="playBtn btn btn-info btn-lg"><span
+                    style="visibility: hidden;">2</span></button></td>
+              <td><button id="btn3" class="playBtn btn btn-info btn-lg"><span
+                    style="visibility: hidden;">3</span></button></td>
             </tr>
             <tr>
-              <td><button id="btn4" class="playBtn btn"></button></td>
-              <td><button id="btn5" class="playBtn btn"></button></td>
-              <td><button id="btn6" class="playBtn btn"></button></td>
+              <td><button id="btn4" class="playBtn btn btn-info btn-lg"><span
+                    style="visibility: hidden;">4</span></button></td>
+              <td><button id="btn5" class="playBtn btn btn-info btn-lg"><span
+                    style="visibility: hidden;">5</span></button></td>
+              <td><button id="btn6" class="playBtn btn btn-info btn-lg"><span
+                    style="visibility: hidden;">6</span></button></td>
             </tr>
             <tr>
-              <td><button id="btn7" class="playBtn btn"></button></td>
-              <td><button id="btn8" class="playBtn btn"></button></td>
-              <td><button id="btn9" class="playBtn btn"></button></td>
+              <td><button id="btn7" class="playBtn btn btn-info btn-lg"><span style="visibility: hidden;"
+                    class="hdn">7</span></button></td>
+              <td><button id="btn8" class="playBtn btn btn-info btn-lg"><span
+                    style="visibility: hidden;">8</span></button></td>
+              <td><button id="btn9" class="playBtn btn btn-info btn-lg"><span
+                    style="visibility: hidden;">9</span></button></td>
             </tr>
           </table>
           <!--End of Game Table-->
           <!--Overlay Div-->
           <div class="rowoverlay rounded-2 box stack-top d-flex flex-column align-items-center parent py-4" id="overlay"
             style="visibility: hidden;">
-            <h3 id="result" class="text-uppercase p-0">Start Game
+            <h3 id="result" class="text-dark text-uppercase p-0">Start Game
             </h3>
-            <button id="refresh" class="rst btn-lg btn-success border-0">REPLAY</button>
-            <button id="reset" class="rst btn-lg btn-danger border-0">RESET</button>
+            <button id="refresh" class="rst btn-lg btn-primary border-0">REPLAY</button>
+            <button id="reset" class="rst btn-lg btn-primary border-0">RESET</button>
           </div>
           <!-- End of Overlay Div-->
         </div>
@@ -113,9 +120,6 @@
   </div>
 
 </body>
-<!-- Import jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="script1.js" id="javascript"></script>
+<script src="script.js" id="javascript"></script>
 
 </html>
