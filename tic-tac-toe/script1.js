@@ -6,11 +6,11 @@ let player = true;
 let playerChangable = true;
 
 // Click audio
-let clickAudio = new Audio("human.wav");
+// let clickAudio = new Audio("human.wav");
 
 $(".playBtn").click(function () {
     // Play Click audio
-    clickAudio.play();
+    // clickAudio.play();
     if (player === true) {
         $(this).text("X").attr("disabled", true);
         setTimeout(function () {
@@ -46,7 +46,7 @@ $.fn.checkResult = function () {
         $(".playBtn")[8].innerHTML
     ];
     // Log array    
-    console.log(playBtnArray);
+    // console.log(playBtnArray);
     if (
         (playBtnArray[0] == "X" && playBtnArray[1] == "X" && playBtnArray[2] == "X") ||
         (playBtnArray[3] == "X" && playBtnArray[4] == "X" && playBtnArray[5] == "X") ||
